@@ -176,13 +176,18 @@ a:active {
     height: auto;
 }
 
-/* nav a:link {
-    background-color: orangered;
+nav a:link {
+    /* background-color: orangered;
     margin: 20px;
     padding: 20px;
-    display: block; 
-} */
-
+    display: block;
+        */ margin-right: 30px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+                nav a:link:last-child {
+                    margin-right: 0;
+                }
 /* resolving conflicts
 #copyright{
     color:rgb(255, 0, 0);
