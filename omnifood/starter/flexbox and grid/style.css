@@ -1,0 +1,55 @@
+/* for flexbox
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {
+    min-height: 100px;
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+} */
+
+/* for grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 400px;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 30px;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.grid-item {
+    height: 200px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+.grid-item-1 {}
+
+.grid-item-2 {}
+
+
+.grid-item-3 {}
+
+.grid-item-4 {}
+
+.grid-item-5 {}
