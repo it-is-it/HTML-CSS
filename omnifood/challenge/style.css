@@ -9,31 +9,30 @@ body {
     line-height: 1.4;
 }
 
-.container {
-    /* background-color: red; */
-    display: flex;
-    gap: 40px;
-}
 .product {
     border: 4px solid black;
     width: 825px;
     margin: 50px auto;
     position: relative;
+    display: grid;
+        grid-template-columns: 250px 1fr 1fr;
+        column-gap: 40px;
 }
 
-.heading {
+.product-title {
     text-align: center;
     text-transform: uppercase;
     font-size: 22px;
     background-color: #f7f7f7;
-    padding: 15px 0;
+    padding: 15px;
+        grid-column: 1/-1;
 }
 
 .box {
     /* width: 243px; */
     /* box-sizing: border-box; */
-    flex: 1;
-    margin-top: 20px;
+    grid: 1;
+        margin-top: 20px;
 }
 
 .product-price {
@@ -42,6 +41,7 @@ body {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 .price {
     font-size: 24px;
 }
@@ -70,11 +70,12 @@ body {
     font-size: 12px;
     letter-spacing: 2px;
 }
+
 .more-info:link,
 .more-info:visited {
     color: #000;
     margin-bottom: 30px;
-        display: inline-block;
+    display: inline-block;
 }
 
 .more-info:hover,
@@ -89,6 +90,7 @@ body {
     margin-top: 20px;
 
 }
+
 .information {
     font-size: 16px;
     text-transform: uppercase;
@@ -104,7 +106,7 @@ body {
     margin-bottom: 10px;
 }
 
-.add {
+.add-cart {
     text-transform: uppercase;
     background-color: black;
     color: white;
@@ -113,12 +115,14 @@ body {
     border-top: 4px solid black;
     cursor: pointer;
     width: 100%;
+    grid-column: 1/-1;
 }
 
 .add:hover {
     background-color: #fff;
     color: #000;
 }
+
 .colors {
     display: flex;
     gap: 10px;
