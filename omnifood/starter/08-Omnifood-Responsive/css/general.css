@@ -66,6 +66,7 @@ html {
   /* font-size: 10px; */
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
+  overflow-x: hidden;
   font-size: 62.5%;
 }
 
@@ -74,6 +75,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+/* only works if there is nothing absolute position in relation to the body */
+  overflow-x: hidden;
 }
 
 /**************************/
@@ -249,6 +252,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
